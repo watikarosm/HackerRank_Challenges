@@ -23,13 +23,13 @@ if __name__ == '__main__':
     array1 = [2, 3, 8, 2, 4, 1, 5, 7]
     array2 = []
     array3 = []
-    numSet = random.randint(0, 50000)
+    numSet = random.randint(0, 50000)   # creating a random size of the set from 0 to 50000
     for i in range(numSet+1):
-        h = random.randint(-9999, 9999)
-        array2.append(h)
+        h = random.randint(-9999, 9999)     # get a random value from -9999 to 9999
+        array2.append(h)                # add the value above in to the array
     print(array2)
-    median(array)
-    median(array1)
-    median(array2)
-    median(array3)
+    median(array)               # case 0: small set with fixed values
+    median(array1)              # case 1: small set with fixed and repeated values
+    median(array2)              # case 2: random size set with random values
+    median(array3)              # case 4: empty set
 
